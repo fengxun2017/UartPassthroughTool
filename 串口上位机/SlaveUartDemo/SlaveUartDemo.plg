@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SlaveUartDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\FX\AppData\Local\Temp\RSPA963.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "G:\nordic桌面\主从透传模块\串口上位机\SlaveUartDemo\Include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/SlaveUartDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\nordic桌面\主从透传模块\串口上位机\SlaveUartDemo\Source\HandleAllEvent.cpp"
+]
+Creating command line "cl.exe @C:\Users\FX\AppData\Local\Temp\RSPA963.tmp" 
+Creating temporary file "C:\Users\FX\AppData\Local\Temp\RSPA964.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SlaveUartDemo.pdb" /debug /machine:I386 /out:"Debug/SlaveUartDemo.exe" /pdbtype:sept 
+".\Debug\auxiliary.obj"
+".\Debug\HandleAllEvent.obj"
+".\Debug\HListBox.obj"
+".\Debug\MyEdit.obj"
+".\Debug\SlaveUartDemo.obj"
+".\Debug\SlaveUartDemoDlg.obj"
+".\Debug\StatisInfo.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UartHandle.obj"
+".\Debug\SlaveUartDemo.res"
+]
+Creating command line "link.exe @C:\Users\FX\AppData\Local\Temp\RSPA964.tmp"
+<h3>Output Window</h3>
+Compiling...
+HandleAllEvent.cpp
+g:\nordic桌面\主从透传模块\串口上位机\slaveuartdemo\slaveuartdemodlg.h(36) : error C2065: 'IDD_SLAVEUARTDEMO_DIALOG' : undeclared identifier
+g:\nordic桌面\主从透传模块\串口上位机\slaveuartdemo\slaveuartdemodlg.h(36) : error C2057: expected constant expression
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SlaveUartDemo.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,404 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SlaveUartDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SlaveUartDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SlaveUartDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SlaveUartDemo 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SLAVEUARTDEMO_DIALOG DIALOGEX 0, 0, 754, 369
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SlaveUartDemo"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "COM",IDC_STATIC,17,23,13,8
+    COMBOBOX        IDC_COMBO_COMLIST0,32,21,34,158,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,71,23,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST0,90,21,41,191,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN0,138,21,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND0,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,41,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD0,124,40,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,165,41,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA0,17,38,50,14
+    EDITTEXT        IDC_EDIT_TXDATA0,19,57,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA0,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,19,88,
+                    160,50
+    GROUPBOX        "从机1",IDC_STATIC,10,8,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX0,127,143,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,18,145,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT0,57,143,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,18,160,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT0,57,158,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,200,24,13,8
+    COMBOBOX        IDC_COMBO_COMLIST1,215,22,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,254,24,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST1,273,22,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN1,321,22,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,261,42,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD1,307,41,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,348,42,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA1,200,39,50,14
+    EDITTEXT        IDC_EDIT_TXDATA1,202,58,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA1,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,202,89,
+                    160,50
+    GROUPBOX        "从机1",IDC_STATIC,193,9,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX1,310,144,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,201,146,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT1,240,144,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,201,161,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT1,240,159,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,381,24,13,8
+    COMBOBOX        IDC_COMBO_COMLIST2,396,22,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,435,24,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST2,454,22,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN2,502,22,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,442,42,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD2,488,41,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,529,42,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA2,381,39,50,14
+    EDITTEXT        IDC_EDIT_TXDATA2,383,58,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA2,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,383,89,
+                    160,50
+    GROUPBOX        "从机1",IDC_STATIC,374,9,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX2,491,144,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,382,146,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT2,421,144,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,382,161,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT2,421,159,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,564,25,13,8
+    COMBOBOX        IDC_COMBO_COMLIST3,579,23,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,618,25,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST3,637,23,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN3,685,23,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,625,43,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD3,671,42,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,712,43,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA3,564,40,50,14
+    EDITTEXT        IDC_EDIT_TXDATA3,566,59,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA3,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,566,90,
+                    160,50
+    GROUPBOX        "从机1",IDC_STATIC,557,10,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX3,674,145,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,565,147,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT3,604,145,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,565,162,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT3,604,160,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,18,199,13,8
+    COMBOBOX        IDC_COMBO_COMLIST4,33,197,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,72,199,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST4,91,197,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN4,139,197,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND4,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,79,217,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD4,125,216,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,166,217,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA4,18,214,50,14
+    EDITTEXT        IDC_EDIT_TXDATA4,20,233,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA4,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,20,264,
+                    160,50
+    GROUPBOX        "从机1",IDC_STATIC,11,184,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX4,128,319,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,19,321,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT4,58,319,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,19,336,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT4,58,334,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,201,200,13,8
+    COMBOBOX        IDC_COMBO_COMLIST5,216,198,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,255,200,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST5,274,198,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN5,322,198,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND5,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,262,218,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD5,308,217,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,349,218,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA5,201,215,50,14
+    EDITTEXT        IDC_EDIT_TXDATA5,203,234,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA5,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,203,
+                    265,160,50
+    GROUPBOX        "从机1",IDC_STATIC,194,185,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX5,311,320,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,202,322,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT5,241,320,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,202,337,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT5,241,335,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,382,200,13,8
+    COMBOBOX        IDC_COMBO_COMLIST6,397,198,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,436,200,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST6,455,198,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN6,503,198,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND6,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,218,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD6,489,217,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,530,218,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA6,382,215,50,14
+    EDITTEXT        IDC_EDIT_TXDATA6,384,234,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA6,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,384,
+                    265,160,50
+    GROUPBOX        "从机1",IDC_STATIC,375,185,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX6,492,320,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,383,322,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT6,422,320,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,383,337,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT6,422,335,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "COM",IDC_STATIC,565,201,13,8
+    COMBOBOX        IDC_COMBO_COMLIST7,580,199,34,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BAUD",IDC_STATIC,619,201,17,8
+    COMBOBOX        IDC_COMBO_BAUDLIST7,638,199,41,117,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Open",IDC_BUTTON_COMOPEN7,686,199,36,14
+    CONTROL         "周期发送",IDC_CHECK_ISPERIODSEND7,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,626,219,46,10
+    EDITTEXT        IDC_EDIT_TXPERIOD7,672,218,36,14,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,713,219,9,8
+    PUSHBUTTON      "Send",IDC_BUTTON_SENDDATA7,565,216,50,14
+    EDITTEXT        IDC_EDIT_TXDATA7,567,235,159,28,ES_MULTILINE | 
+                    ES_UPPERCASE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_RICHEDIT_RXDATA7,"RICHEDIT",ES_MULTILINE | 
+                    ES_READONLY | WS_BORDER | WS_VSCROLL | WS_TABSTOP,567,
+                    266,160,50
+    GROUPBOX        "从机1",IDC_STATIC,558,186,172,166
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEARRX7,675,321,50,14
+    LTEXT           "TX COUNT:",IDC_STATIC,566,323,37,8
+    EDITTEXT        IDC_EDIT_TXCOUNT7,605,321,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RX COUNT:",IDC_STATIC,566,338,37,8
+    EDITTEXT        IDC_EDIT_RXCOUNT7,605,336,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "DisConn",IDC_BUTTON_DISCONN0,129,157,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SlaveUartDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SlaveUartDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SlaveUartDemo.EXE\0"
+            VALUE "ProductName", "SlaveUartDemo 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SLAVEUARTDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 747
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SlaveUartDemo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SlaveUartDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
